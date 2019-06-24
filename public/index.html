@@ -14,8 +14,12 @@
 		<h2>ToDo List</h2>
 		<form v-on:submit.prevent="saveToDoTask">
 			<input type="text" name="name" v-model="todos.name">
-			<input type="radio" name="priority" v-model= "todos.priority" value="high">High<br>
-			<input type="radio" name="priority" v-model="todos.priority" value="low">Low<br>
+			<div>
+				<input type="radio" name="priority" v-model= "todos.priority" value="high">High</input>
+			</div>
+			<div>
+				<input type="radio" name="priority" v-model="todos.priority" value="low">Low</input>
+			</div>
 			<input type="submit" value="Save ToDo task" >
 		</form>
 		<ul>

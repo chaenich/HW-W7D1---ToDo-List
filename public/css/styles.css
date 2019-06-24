@@ -4,5 +4,16 @@ li.highPriority {
 }
 
 li.lowPriority {
-  color: orange; 
+  color: orange;
+}
+
+form {
+  display: flex;
+}
+
+input[type=radio] {
+  float: right;
+}
+input[type=radio] label {
+  float: left;
 }
