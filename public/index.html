@@ -19,7 +19,7 @@
 			<input type="submit" value="Save ToDo task" >
 		</form>
 		<ul>
-			<li v-for="todo in todos">{{ todo.name }}</li>
+			<li v-for="todo in todos" v-bind:class="todo.priority==='high' ? 'highPriority' : 'lowPriority'"> {{ todo.name }}</li>
 		</ul>	</div>
 </body>
 </html>
