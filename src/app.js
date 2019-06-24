@@ -5,14 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		el: "#app",
 		data: {
 			todos: [
-				"Buy shopping", "Clean bathroom", "Car's MOT"
-			],
-			newToDoTask: ""
+				{ name: "Buy shopping", priority: "low"},
+				{ name: "Clean bathroom", priority: "high"},
+				{ name: "Car's MOT", priority: "high"}
+			]
     },
 		methods: {
 			saveToDoTask: function () {
-				this.todos.push(this.newToDoTask);
-				this.newToDoTask = "";
+				this.todos.push( {
+					name: this.todos.name,
+					priority: this.todos.priority
+			});
+			this.todos.name = "";
 			}
 		}
 	});
