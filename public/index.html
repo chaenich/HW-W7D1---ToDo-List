@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vue ToDo List</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+	<script src="./js/bundle.js"></script>
+</head>
+<body>
+	<div id="app">
+	<ul>
+		<li v-for="todo in todos">{{ todo }}</li>
+	</ul>
+	<input type="text" placeholder="Enter ToDo item" v-model="newToDoTask">
+	<button v-on:click="saveToDoTask"> Save new ToDo Task</button>
+
+
+	</div>
+</body>
+</html>
