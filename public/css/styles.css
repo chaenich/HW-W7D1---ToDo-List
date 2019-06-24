@@ -1,9 +1,15 @@
-li.highPriority {
-	border: 1px solid red;
-	color: red;
+#app {
+	font-family: Arial;
 }
 
-li.lowPriority {
+li.highPriority,
+#hi {
+	color: red;
+  font-weight: bold;
+}
+
+li.lowPriority,
+#lo {
   color: orange;
 }
 
@@ -14,6 +20,17 @@ form {
 input[type=radio] {
   float: right;
 }
+
 input[type=radio] label {
   float: left;
 }
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+li {
+	margin: 7px 0;
+  }
